@@ -22,4 +22,5 @@ sum_euro_part = sum // 100
 sum_cent_part = sum % 100
 
 # Use f strings to print the euro and cent amount in a human readable format. 
-print(f"The sum of these is €{sum_euro_part}.{sum_cent_part}")
+# :02d needs to be added to the cent part so that if the cent amount is a single digit, a leading 0 will be added. 
+print(f"The sum of these is €{sum_euro_part}.{sum_cent_part:02d}")
