@@ -1,4 +1,4 @@
-# Request a 10 digit number from the user and convert it to an integer.
+# Request a 10 digit account number from the user..
 acc_no = input("Please enter a 10 digit account number: ")
 
 # Since strings are an immutable data type, we'll convert the account number into a list of characters using the list() function. 
@@ -11,5 +11,6 @@ for i in range(0,6):
 # We can use the .join() method to convert the list back into a string.
 acc_no_censored = "".join(acc_no_list)
 
+# Finally, we'll print the censored account number.
 print(acc_no_censored)
 
