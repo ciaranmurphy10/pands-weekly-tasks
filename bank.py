@@ -15,7 +15,7 @@ amount2_int = int(amount2)
 # Add the two integer amounts together and save the sum to the variable sum.
 sum = amount1_int + amount2_int 
 
-# Use floor division to find the euro amount of the ent amount. 
+# Use floor division to find the euro amount of the cent amount. 
 sum_euro_part = sum // 100
 
 # Use modulo to find the cent amount of the cent amount.
