@@ -10,14 +10,8 @@ import datetime
 # This will asign an integer to the today variable ranging from 0 to 6 where 0 represents Monday, etc.
 today = datetime.date.today().weekday()
 
-# Next we'll create a simple if statement to check if it's a weekday based on the day of the week. 
+# Next we'll create an if statement to check if it's a weekday based on the day of the week, and print a string based on whether it's a weekday or not. 
 if today in range(0,5):
-  weekday = True
-else:
-  weekday = False
-
-# Finally, we'll use another if statement to print a string to print based on whether it's a weekday or not. 
-if weekday:
   print("Back to work, it's a weekday!")
 else:
   print("Take a hike, it's the weekend!")
