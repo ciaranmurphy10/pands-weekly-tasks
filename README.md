@@ -36,6 +36,9 @@ An issue that you run into as a result of calculating the euro and cent amounts 
 
 #### References
 [https://www.w3schools.com/python/ref_func_input.asp](https://www.w3schools.com/python/ref_func_input.asp)
+
 [https://www.geeksforgeeks.org/floating-point-error-in-python/](https://www.geeksforgeeks.org/floating-point-error-in-python/)
+
 [https://www.w3docs.com/snippets/python/display-number-with-leading-zeros.html#google_vignette](https://www.w3docs.com/snippets/python/display-number-with-leading-zeros.html#google_vignette)
+
 [https://realpython.com/python-f-strings/](https://realpython.com/python-f-strings/)
