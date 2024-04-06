@@ -1,12 +1,10 @@
-## Description
-This repository contains the weekly tasks for the module 23-24: 8632 -- PROGRAMMING AND SCRIPTING. 
+# 23-24: 8632 -- PROGRAMMING AND SCRIPTING. 
 
-## Weekly Tasks
-### Week 1 
+# Week 1 
 Week 1 did not contain a programming task.
 
-### Week 2
-#### Task
+# Week 2
+## Task
 >When Banks are storing currency figures, they store them as integers (usually in cent).This is to avoid rounding errors. 
 >
 >Write a program called bank.py 
@@ -21,7 +19,7 @@ Week 1 did not contain a programming task.
 >Enter amount2(in cent): 180
 >The sum of these is €2.45
 
-#### Discussion
+## Discussion
 This task requires the code to do a number of different things:
 * Accept inputs from the user.
 * Save them in the correct format. 
@@ -34,7 +32,7 @@ A safer way to do this calculation is to use floor division to divide our cent a
 
 An issue that you run into as a result of calculating the euro and cent amounts in this way is that if the cent amount is less than 10, it will natuarally display as a single digit. Since the standard format for displaying a euro and cent amount is to insert a leading 0 in this situation, we can use string formatting to deal with this. 
 
-#### References
+## References
 [https://www.w3schools.com/python/ref_func_input.asp](https://www.w3schools.com/python/ref_func_input.asp)
 
 [https://www.geeksforgeeks.org/floating-point-error-in-python/](https://www.geeksforgeeks.org/floating-point-error-in-python/)
