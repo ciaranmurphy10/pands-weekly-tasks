@@ -13,6 +13,6 @@ today = datetime.date.today().weekday()
 # Since the range function is not inclusive of the upper bound, we'll use range(0,5) to check if it's 0 to 4 (a weekday).
 # If not, we can assume that it's either 6 or 7 (weekend). 
 if today in range(0,5):
-  print("Back to work, it's a weekday!")
+  print("Yes, unfortunately today is a weekday.")
 else:
-  print("Take a hike, it's the weekend!")
+  print("It is the weekend, yay!")
