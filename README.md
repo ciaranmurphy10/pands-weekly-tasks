@@ -13,10 +13,14 @@
 >Prompt the user and read in two money amounts (in cent)
 >Add the two amounts
 >Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
->$ python bank.py
->Enter amount1(in cent): 65
->Enter amount2(in cent): 180
->The sum of these is €2.45
+>
+>`$ python bank.py`
+>
+>`Enter amount1(in cent): 65`
+>
+>`Enter amount2(in cent): 180`
+>
+>`The sum of these is €2.45`
 
 ### Discussion
 This task requires the code to do a number of different things:
@@ -51,8 +55,11 @@ An issue that you run into as a result of calculating the euro and cent amounts 
 >Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 >
 >`$ python accounts.py`
+>
 >`Please enter an 10 digit account number: 1234567890`
+>
 >`XXXXXX7890`
+
 >Extra:
 >Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
 
@@ -126,6 +133,7 @@ Once x becomes equal to 1, the while loop condition will not be satisfied anymor
 >An example of running it on a Saturday is as follows:
 >
 >`$ python weekday.py`
+>
 >`It is the weekend, yay!`
 
 ### Discussion
@@ -157,8 +165,10 @@ Since the day of the week will be represented as an integer from 0 to 7, we'll u
 >
 >
 `$ python squareroot.py`
-`Please enter a positive number: 14.5`
-`The square root of 14.5 is approx. 3.8.`
+>
+>`Please enter a positive number: 14.5`
+>
+>`The square root of 14.5 is approx. 3.8.`
 
 ### Discussion
 This program uses the Newton Raphson method for determining the square root of a number. This method uses a brute force iterative method for repeatedly approximating the square root of a number. It starts by using an initial guess (in our case, 1) and then iterating over a numerical method to get closer and closer to the square root until a desired level of accuracy is reached. 
@@ -174,13 +184,28 @@ To do this I've written a funciton which is a little bit more complicated than i
 
 ## Counts e's
 ### Task
-
+>Write a program that reads in a text file and outputs the number of e's it contains. Think about what is being asked here, document any assumptions you are making.
+>
+>The program should take the filename from an argument on the command line. I have not shown you how to do this, you need to look it up.
+>
+>Marks will be given for dealing with errors eg no argument, filename that does not exist, or is not a text file.
+>
+>`$ python es.py moby-dick.txt`
+>
+>`116960`
 
 ### Discussion
+This program opens a text file, reads the contents, and then counts how many e's there are in the text by iterating through each letter and checking if it's an e. 
+
+The sys library can be used to read arguments which are given when running the program. 
  
 
 ### References
+[https://www.w3schools.com/python/python_file_open.asp](https://www.w3schools.com/python/python_file_open.asp)
 
+[https://www.geeksforgeeks.org/command-line-arguments-in-python/](https://www.geeksforgeeks.org/command-line-arguments-in-python/)
+
+[https://stackoverflow.com/questions/43120555/for-loop-to-count-letters-in-a-word](https://stackoverflow.com/questions/43120555/for-loop-to-count-letters-in-a-word)
 
 ## Plot Task
 

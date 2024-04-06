@@ -12,7 +12,6 @@ def count_es(file_name):
   """
 
   # Open the file and assign it to the variable file. 
-  # Ref: https://www.w3schools.com/python/python_file_open.asp
   with open(file_name, "r") as file:
 
     # Read the text in the file, and assign it to the variable file_text. 
@@ -32,8 +31,6 @@ def count_es(file_name):
     return num_es
 
 # The sys module can be used to pass arguments when running a script. 
-# Ref: https://www.geeksforgeeks.org/command-line-arguments-in-python/
-  
 # We will assume that only two arguments are passed when running this script, the python script name and the text file name in that order. 
 # sys.argv will contain a list of arguments passed. 
 # We'll use sys.argv[1] to index the second item in the list, which is our text file name. 
