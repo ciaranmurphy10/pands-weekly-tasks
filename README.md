@@ -50,9 +50,9 @@ An issue that you run into as a result of calculating the euro and cent amounts 
 >
 >Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 >
->$ python accounts.py
->Please enter an 10 digit account number: 1234567890
->XXXXXX7890
+>`$ python accounts.py`
+>`Please enter an 10 digit account number: 1234567890`
+>`XXXXXX7890`
 >Extra:
 >Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
 
@@ -87,11 +87,11 @@ We can then convert our list back into a string using the `.join()` method.
 >
 >Example of it running:
 >
->$ python collatz.py
+>`$ python collatz.py`
 >
->Please enter a positive integer: 10
+>`Please enter a positive integer: 10`
 >
->10 5 16 8 4 2 1
+>`10 5 16 8 4 2 1`
 
 ### Discussion
 When this program is run, it will request the user to enter a positive integer. This will be stored as a string type so we'll convert it to an int type. We can then print it, as this will be the first value in the sequence.
@@ -125,8 +125,8 @@ Once x becomes equal to 1, the while loop condition will not be satisfied anymor
 >
 >An example of running it on a Saturday is as follows:
 >
->$ python weekday.py
->It is the weekend, yay!
+>`$ python weekday.py`
+>`It is the weekend, yay!`
 
 ### Discussion
 
@@ -145,16 +145,34 @@ Since the day of the week will be represented as an integer from 0 to 7, we'll u
 ## Square Root
 
 ### Task
-
+>Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+>
+>You should create a function called <tt>sqrt</tt> that does this.
+>
+>I am asking you to create your own sqrt function and not to use the built in functions x ** .5 or math.sqrt(x).
+>
+>This is to demonstrate that you can research and code a process (If you really needed the square root you would use one of the above methods). I suggest that you look at the newton method at estimating square roots. 
+>
+>This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
+>
+>
+`$ python squareroot.py`
+`Please enter a positive number: 14.5`
+`The square root of 14.5 is approx. 3.8.`
 
 ### Discussion
- 
+This program uses the Newton Raphson method for determining the square root of a number. This method uses a brute force iterative method for repeatedly approximating the square root of a number. It starts by using an initial guess (in our case, 1) and then iterating over a numerical method to get closer and closer to the square root until a desired level of accuracy is reached. 
+
+To do this I've written a funciton which is a little bit more complicated than it needs to be for our purposes, since we won't be using custom errors or guesses when running the program. 
 
 ### References
+[https://www.geeksforgeeks.org/newton-raphson-method/](https://www.geeksforgeeks.org/newton-raphson-method/)
 
+[https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter19.04-Newton-Raphson-Method.html](https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter19.04-Newton-Raphson-Method.html)
+
+[https://www.w3schools.com/python/python_functions.asp](https://www.w3schools.com/python/python_functions.asp)
 
 ## Counts e's
-
 ### Task
 
 

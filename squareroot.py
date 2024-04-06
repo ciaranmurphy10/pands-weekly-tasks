@@ -1,3 +1,5 @@
+import sys
+
 def sqrt(number, error = 0.01, guess = 1):
   """
   This function calculates the square root of a number to a desired level of accuracy. 
