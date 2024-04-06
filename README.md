@@ -109,3 +109,67 @@ Once x becomes equal to 1, the while loop condition will not be satisfied anymor
 [https://www.w3schools.com/python/python_while_loops.asp](https://www.w3schools.com/python/python_while_loops.asp)
 
 [https://realpython.com/python-modulo-operator/](https://realpython.com/python-modulo-operator/)
+
+## Weekdays
+
+### Task
+>Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
+>
+>You will need to search the web to find how you work out what day it is.
+>
+>An example of running this program on a Thursday is given below.
+>
+>$ python weekday.py
+>Yes, unfortunately today is a weekday.
+>
+>
+>An example of running it on a Saturday is as follows:
+>
+>$ python weekday.py
+>It is the weekend, yay!
+
+### Discussion
+
+To work out what day of the week it is, we'll use the datetime module which can be imported at the start of our code. We'll chain together a number of methods operating on the date class from the datetime library to find out the current day of the week. 
+
+Since the day of the week will be represented as an integer from 0 to 7, we'll use an if statement to check if it's a weekday (0, 1, 2, 3, or 4) or a weekend (5 or 6). 
+ 
+
+### References
+[https://www.geeksforgeeks.org/python-program-to-find-day-of-the-week-for-a-given-date/](https://www.geeksforgeeks.org/python-program-to-find-day-of-the-week-for-a-given-date/)
+
+[https://docs.python.org/3/library/datetime.html](https://docs.python.org/3/library/datetime.html)
+
+[https://www.w3schools.com/python/ref_func_range.asp](https://www.w3schools.com/python/ref_func_range.asp)
+
+## Square Root
+
+### Task
+
+
+### Discussion
+ 
+
+### References
+
+
+## Counts e's
+
+### Task
+
+
+### Discussion
+ 
+
+### References
+
+
+## Plot Task
+
+### Task
+
+
+### Discussion
+ 
+
+### References
