@@ -36,6 +36,10 @@ An issue that you run into as a result of calculating the euro and cent amounts 
 
 [https://www.geeksforgeeks.org/floating-point-error-in-python/](https://www.geeksforgeeks.org/floating-point-error-in-python/)
 
+[https://www.geeksforgeeks.org/floor-division-in-python/](https://www.geeksforgeeks.org/floor-division-in-python/)
+
+[https://realpython.com/python-modulo-operator/](https://realpython.com/python-modulo-operator/)
+
 [https://www.w3docs.com/snippets/python/display-number-with-leading-zeros.html#google_vignette](https://www.w3docs.com/snippets/python/display-number-with-leading-zeros.html#google_vignette)
 
 [https://realpython.com/python-f-strings/](https://realpython.com/python-f-strings/)
@@ -90,6 +94,18 @@ We can then convert our list back into a string using the `.join()` method.
 >10 5 16 8 4 2 1
 
 ### Discussion
+When this program is run, it will request the user to enter a positive integer. This will be stored as a string type so we'll convert it to an int type. We can then print it, as this will be the first value in the sequence.
 
+We'll then use a while loop with nested if statement. The while loop checks if a condition is true (in this case, whether x is not equal to 1) and continually performs a task if this condition is met. As long as x is not 1, we use an if statement with the modulo operator to check if x is even or odd. Based on this, it is either divided by two or multiplied by 3. 
+
+Once x becomes equal to 1, the while loop condition will not be satisfied anymore and the program will stop running.  
 
 ### References
+
+[https://en.wikipedia.org/wiki/Collatz_conjecture#:~:text=The%20Collatz%20conjecture%20states%20that,years%20after%20receiving%20his%20doctorate.](https://en.wikipedia.org/wiki/Collatz_conjecture#:~:text=The%20Collatz%20conjecture%20states%20that,years%20after%20receiving%20his%20doctorate.)
+
+[https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence#:~:text=Write%20a%20function%20named%20collatz,return%203%20*%20number%20%2B%201%20.](https://codereview.stackexchange.com/questions/285429/automate-the-boring-stuff-with-python-the-collatz-sequence#:~:text=Write%20a%20function%20named%20collatz,return%203%20*%20number%20%2B%201%20.)
+
+[https://www.w3schools.com/python/python_while_loops.asp](https://www.w3schools.com/python/python_while_loops.asp)
+
+[https://realpython.com/python-modulo-operator/](https://realpython.com/python-modulo-operator/)
