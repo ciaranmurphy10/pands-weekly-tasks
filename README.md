@@ -1,10 +1,9 @@
 # 23-24: 8632 -- PROGRAMMING AND SCRIPTING. 
 
-# Week 1 
-Week 1 did not contain a programming task.
+# Weekly Tasks
 
-# Week 2
-## Task
+## Bank
+### Task
 >When Banks are storing currency figures, they store them as integers (usually in cent).This is to avoid rounding errors. 
 >
 >Write a program called bank.py 
@@ -19,20 +18,20 @@ Week 1 did not contain a programming task.
 >Enter amount2(in cent): 180
 >The sum of these is €2.45
 
-## Discussion
+### Discussion
 This task requires the code to do a number of different things:
 * Accept inputs from the user.
 * Save them in the correct format. 
 * Convert cent to euro. 
 * Print a disriptive sentence. 
 
-The trickiest part of this is the conversion from cent to euro. It may be tempting to simply divide the cent amount by 100, but this would lead to our amount being stored as a float since the output of division in Python is always a float. Due to how floating points are stored as binary in Python, it's best to avoid this. 
+The trickiest part of this is the conversion from cent to euro. It may be tempting to simply divide the cent amount by 100, but this would lead to our amount being stored as a float since the output of division in Python is always a float. Due to how floating points are stored as binary in Python, this can lead rounding errors and other issues so it's best to avoid this. 
 
 A safer way to do this calculation is to use floor division to divide our cent amount by 100, which discards the remainder and returns the result as an integer. This tells us how many times 100 fits into our cent amount (which could be 0 times). This is our euro amount. To get our cent amount, we use the modulo operator to find the remainder when dividing our original cent amount by 100. This gives us our cent amount. When we put these together, we get our original cent amount in euro and cent. 
 
-An issue that you run into as a result of calculating the euro and cent amounts in this way is that if the cent amount is less than 10, it will natuarally display as a single digit. Since the standard format for displaying a euro and cent amount is to insert a leading 0 in this situation, we can use string formatting to deal with this. 
+An issue that you run into as a result of calculating the euro and cent amounts in this way is that if the cent amount is less than 10, it will natuarally display as a single digit. Since the standard format for displaying a euro and cent amount is to insert a leading 0 in front of the cent part in this situation, we can use string formatting to deal with this. 
 
-## References
+### References
 [https://www.w3schools.com/python/ref_func_input.asp](https://www.w3schools.com/python/ref_func_input.asp)
 
 [https://www.geeksforgeeks.org/floating-point-error-in-python/](https://www.geeksforgeeks.org/floating-point-error-in-python/)
@@ -40,3 +39,57 @@ An issue that you run into as a result of calculating the euro and cent amounts 
 [https://www.w3docs.com/snippets/python/display-number-with-leading-zeros.html#google_vignette](https://www.w3docs.com/snippets/python/display-number-with-leading-zeros.html#google_vignette)
 
 [https://realpython.com/python-f-strings/](https://realpython.com/python-f-strings/)
+
+## Accounts
+### Task
+>Bank account numbers can stored as 10 character strings, for security reasons some applications only display the last 4 characters (with the other other characters replaced with Xs).
+>
+>Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+>
+>$ python accounts.py
+>Please enter an 10 digit account number: 1234567890
+>XXXXXX7890
+>Extra:
+>Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
+
+## Discussion
+When the use enters their account number it will initially be stored as a string, but since strings are immutable and cannot be changed once they're created, we'll need to convert it to another type so that we can edit the last four digits. Lists are an ideal data type for manipulation, so we'll use the `list()` method to convert our string to a list. 
+
+The `len()` function an then be used to determine the number of digits in the account number. We can then use a for loop to cycle through the digits of the account number, replacing each with an X up until the last four digit.
+
+We can then convert our list back into a string using the `.join()` method.
+
+## References
+[https://python-forum.io/thread-15056.html](https://python-forum.io/thread-15056.html)
+
+[https://www.geeksforgeeks.org/mutable-vs-immutable-objects-in-python/](https://www.geeksforgeeks.org/mutable-vs-immutable-objects-in-python/)
+
+[https://www.w3schools.com/python/ref_func_list.asp](https://www.w3schools.com/python/ref_func_list.asp)
+
+[https://realpython.com/len-python-function/](https://realpython.com/len-python-function/)
+
+[https://www.w3schools.com/python/ref_string_join.asp](https://www.w3schools.com/python/ref_string_join.asp)
+
+## Collatz
+
+### Task
+>Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
+>
+>At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
+>
+>Have the program end if the current value is one.
+>
+>Push the program in your pands-weekly-tasks GitHub repository (like you do for all the weekly tasks).
+>
+>Example of it running:
+>
+>$ python collatz.py
+>
+>Please enter a positive integer: 10
+>
+>10 5 16 8 4 2 1
+
+### Discussion
+
+
+### References
