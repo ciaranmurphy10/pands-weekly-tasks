@@ -70,7 +70,7 @@ The `len()` function an then be used to determine the number of digits in the ac
 
 We can then convert our list back into a string using the `.join()` method.
 
-## References
+### References
 [https://python-forum.io/thread-15056.html](https://python-forum.io/thread-15056.html)
 
 [https://www.geeksforgeeks.org/mutable-vs-immutable-objects-in-python/](https://www.geeksforgeeks.org/mutable-vs-immutable-objects-in-python/)
@@ -81,7 +81,7 @@ We can then convert our list back into a string using the `.join()` method.
 
 [https://www.w3schools.com/python/ref_string_join.asp](https://www.w3schools.com/python/ref_string_join.asp)
 
-## Collatz
+### Collatz
 
 ### Task
 >Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
@@ -229,6 +229,8 @@ Since our equation is plotted on an x-axis range of 0 to 10, and most values of 
 [https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html](https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html)
 
 [https://www.w3schools.com/python/matplotlib_histograms.asp](https://www.w3schools.com/python/matplotlib_histograms.asp)
+
+[https://www.w3schools.com/python/matplotlib_line.asp](https://www.w3schools.com/python/matplotlib_line.asp)
 
 [https://numpy.org/doc/stable/reference/generated/numpy.linspace.html](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html)
 
