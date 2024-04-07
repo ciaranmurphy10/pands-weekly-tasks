@@ -164,7 +164,7 @@ Since the day of the week will be represented as an integer from 0 to 7, we'll u
 >This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 >
 >
-`$ python squareroot.py`
+>`$ python squareroot.py`
 >
 >`Please enter a positive number: 14.5`
 >
@@ -210,9 +210,36 @@ The sys library can be used to read arguments which are given when running the p
 ## Plot Task
 
 ### Task
-
+>Write a program called plottask.py that displays:
+>
+> - a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+> - and a plot of the function  h(x)=x^3 in the range 0 to 10, 
+>
+>on the one set of axes.
+>
+>Some marks will be given for making the plot look nice (legend etc).
 
 ### Discussion
- 
+This program makes use of Numpy arrays and Matplotlib's plotting functions. 
+
+Matplotlib allows us to control each detail of our plot, such as colours, line widths, axis titles, etc. 
+
+Since our equation is plotted on an x-axis range of 0 to 10, and most values of a normal distribution with a mean of 5 and standard deviation of 2 will fall between 0 and 10 too, we can easily display both plots on the same axis.  
 
 ### References
+[https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html](https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html)
+
+[https://www.w3schools.com/python/matplotlib_histograms.asp](https://www.w3schools.com/python/matplotlib_histograms.asp)
+
+[https://numpy.org/doc/stable/reference/generated/numpy.linspace.html](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html)
+
+[https://numpy.org/doc/stable/reference/generated/numpy.power.html](https://numpy.org/doc/stable/reference/generated/numpy.power.html)
+
+[https://matplotlib.org/stable/gallery/color/named_colors.html](https://matplotlib.org/stable/gallery/color/named_colors.html)
+
+[https://matplotlib.org/stable/gallery/text_labels_and_annotations/tex_demo.html](https://matplotlib.org/stable/gallery/text_labels_and_annotations/tex_demo.html)
+
+[https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)
+
+[https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html)
+
