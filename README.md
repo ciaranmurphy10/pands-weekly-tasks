@@ -126,9 +126,9 @@ Once x becomes equal to 1, the while loop condition will not be satisfied anymor
 >
 >An example of running this program on a Thursday is given below.
 >
->$ python weekday.py
->Yes, unfortunately today is a weekday.
+>`$ python weekday.py`
 >
+>`Yes, unfortunately today is a weekday.`
 >
 >An example of running it on a Saturday is as follows:
 >
@@ -137,7 +137,6 @@ Once x becomes equal to 1, the while loop condition will not be satisfied anymor
 >`It is the weekend, yay!`
 
 ### Discussion
-
 To work out what day of the week it is, we'll use the datetime module which can be imported at the start of our code. We'll chain together a number of methods operating on the date class from the datetime library to find out the current day of the week. 
 
 Since the day of the week will be represented as an integer from 0 to 7, we'll use an if statement to check if it's a weekday (0, 1, 2, 3, or 4) or a weekend (5 or 6). 
