@@ -8,9 +8,9 @@ norm_dist = np.random.normal(loc=5, scale=2, size=1000)
 # We can plot this using Matplotlib's hist() function. 
 plt.hist(norm_dist, 
 	alpha = 0.6, # Make our histogram slightly transparent. 
-	color = "cornflowerblue", # Choose the fill colour of the bins
-	edgecolor = "black", # Choose the edge colour of the bins
-	linewidth = 0.5, # Choose the width of the edges of the bins
+	color = "cornflowerblue", # Choose the fill colour of the bins.
+	edgecolor = "black", # Choose the edge colour of the bins.
+	linewidth = 0.5, # Choose the width of the edges of the bins.
 	label = "Normal Distribution, $N=1000$, $μ=5$, $σ=2$") # Choose the label text for the legend, using TeX to format the parameters. 
 
 # To plot h(x)=x^3 for the range 0 to 10, we'll need to create two arrays. 
