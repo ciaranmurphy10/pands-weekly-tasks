@@ -101,7 +101,7 @@ We can then convert our list back into a string using the `.join()` method.
 >`10 5 16 8 4 2 1`
 
 ### Discussion
-When this program is run, it will request the user to enter a positive integer. This will be stored as a string type so we'll convert it to an int type. We can then print it, as this will be the first value in the sequence.
+When this program is run, it will request the user to enter a positive integer. This will be stored as a string type so we'll convert it to an int type. The program will check if the inputted value is 0 or a negative integer, returning a custom error message if so. We can then print the inputted value, as this will be the first value in the sequence.
 
 We'll then use a while loop with nested if statement. The while loop checks if a condition is true (in this case, whether x is not equal to 1) and continually performs a task if this condition is met. As long as x is not 1, we use an if statement with the modulo operator to check if x is even or odd. Based on this, it is either divided by two or multiplied by 3. 
 
@@ -116,6 +116,8 @@ Once x becomes equal to 1, the while loop condition will not be satisfied anymor
 [https://www.w3schools.com/python/python_while_loops.asp](https://www.w3schools.com/python/python_while_loops.asp)
 
 [https://realpython.com/python-modulo-operator/](https://realpython.com/python-modulo-operator/)
+
+[https://docs.python.org/3/library/exceptions.html#IndexError](https://docs.python.org/3/library/exceptions.html#IndexError)
 
 ## Weekdays
 
