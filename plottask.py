@@ -18,13 +18,11 @@ plt.hist(norm_dist,
 # We'll use Numpy's linspace() function to do this, which returns an evenly spaced array of values between two values. 
 # We'll generate 1000 values between 0 and 10. 
 x_vals = np.linspace(0, 10, 1000)
-print(x_vals)
 
 # The second array will contain the cube of each value in our x_vals array. 
 # Numpy makes it easy to do this in a number of ways. 
 # We'll use the power() function which takes an array and returns an array of its values raised to a specified power. 
 y_vals = np.power(x_vals, 3)
-print(y_vals)
 
 # To plot this, we'll use Matplotlib's plot() function, which plots x vs y. 
 # We'll plot x_vals against y_vals.  
