@@ -1,6 +1,11 @@
 # Request the user to enter a positive integer (which will be saved as a string) and convert it to an integer. 
 x = int(input("Please enter a positive integer: "))
 
+# Check if x is a negative integer or 0. 
+if isinstance(x, int) and x < 1:
+  # Raise a ValueError if so. 
+  raise ValueError("The inputted value must be a positive integer.")
+
 # Print the first integer in the sequence.
 print(x)
 
@@ -15,7 +20,7 @@ while x != 1:
     print(x)
   # If it is not even, we can assume that it is odd.
   else:
-    # If it is, update x by multiplying it by 3 and adding 1. 
+    # If it is odd, update x by multiplying it by 3 and adding 1. 
     x = (3 * x) + 1
     # Print the new value of x. 
     print(x)
