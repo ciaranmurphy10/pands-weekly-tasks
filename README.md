@@ -27,13 +27,13 @@ This task requires the code to do a number of different things:
 * Accept inputs from the user.
 * Save them in the correct format. 
 * Convert cent to euro. 
-* Print a disriptive sentence. 
+* Print a descriptive sentence. 
 
-The trickiest part of this is the conversion from cent to euro. It may be tempting to simply divide the cent amount by 100, but this would lead to our amount being stored as a float since the output of division in Python is always a float. Due to how floating points are stored as binary in Python, this can lead rounding errors and other issues so it's best to avoid this. 
+The trickiest part of this is the conversion from cent to euro. It may be tempting to simply divide the cent amount by 100, but this would lead to our amount being stored as a float since the output of division in Python is always a float. Due to how floating points are stored as binary in Python, this can lead to rounding errors and other issues so it's best to avoid this. 
 
 A safer way to do this calculation is to use floor division to divide our cent amount by 100, which discards the remainder and returns the result as an integer. This tells us how many times 100 fits into our cent amount (which could be 0 times). This is our euro amount. To get our cent amount, we use the modulo operator to find the remainder when dividing our original cent amount by 100. This gives us our cent amount. When we put these together, we get our original cent amount in euro and cent. 
 
-An issue that you run into as a result of calculating the euro and cent amounts in this way is that if the cent amount is less than 10, it will natuarally display as a single digit. Since the standard format for displaying a euro and cent amount is to insert a leading 0 in front of the cent part in this situation, we can use string formatting to deal with this. 
+An issue that you run into as a result of calculating the euro and cent amounts in this way is that if the cent amount is less than 10, it will naturally display as a single digit. Since the standard format for displaying a euro and cent amount is to insert a leading 0 in front of the cent part in this situation, we can use string formatting to deal with this. 
 
 ### References
 [https://www.w3schools.com/python/ref_func_input.asp](https://www.w3schools.com/python/ref_func_input.asp)
@@ -64,9 +64,9 @@ An issue that you run into as a result of calculating the euro and cent amounts 
 >Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
 
 ## Discussion
-When the use enters their account number it will initially be stored as a string, but since strings are immutable and cannot be changed once they're created, we'll need to convert it to another type so that we can edit the last four digits. Lists are an ideal data type for manipulation, so we'll use the `list()` method to convert our string to a list. 
+When the user enters their account number it will initially be stored as a string, but since strings are immutable and cannot be changed once they're created, we'll need to convert it to another type so that we can edit the last four digits. Lists are an ideal data type for manipulation, so we'll use the `list()` method to convert our string to a list. 
 
-The `len()` function an then be used to determine the number of digits in the account number. We can then use a for loop to cycle through the digits of the account number, replacing each with an X up until the last four digit.
+The `len()` function can then be used to determine the number of digits in the account number. We can then use a for loop to cycle through the digits of the account number, replacing each with an X up until the last four digits.
 
 We can then convert our list back into a string using the `.join()` method.
 
@@ -103,7 +103,7 @@ We can then convert our list back into a string using the `.join()` method.
 ### Discussion
 When this program is run, it will request the user to enter a positive integer. This will be stored as a string type so we'll convert it to an int type. The program will check if the inputted value is 0 or a negative integer, returning a custom error message if so. We can then print the inputted value, as this will be the first value in the sequence.
 
-We'll then use a while loop with nested if statement. The while loop checks if a condition is true (in this case, whether x is not equal to 1) and continually performs a task if this condition is met. As long as x is not 1, we use an if statement with the modulo operator to check if x is even or odd. Based on this, it is either divided by two or multiplied by 3. 
+We'll then use a while loop with a nested if statement. The while loop checks if a condition is true (in this case, whether x is not equal to 1) and continually performs a task if this condition is met. As long as x is not 1, we use an if statement with the modulo operator to check if x is even or odd. Based on this, it is either divided by two or multiplied by 3. 
 
 Once x becomes equal to 1, the while loop condition will not be satisfied anymore and the program will stop running.  
 
@@ -172,9 +172,9 @@ Since the day of the week will be represented as an integer from 0 to 7, we'll u
 >`The square root of 14.5 is approx. 3.8.`
 
 ### Discussion
-This program uses the Newton Raphson method for determining the square root of a number. This method uses a brute force iterative method for repeatedly approximating the square root of a number. It starts by using an initial guess (in our case, 1) and then iterating over a numerical method to get closer and closer to the square root until a desired level of accuracy is reached. 
+This program uses the Newton-Raphson method for determining the square root of a number. This method uses a brute force iterative method for repeatedly approximating the square root of a number. It starts by using an initial guess (in our case, 1) and then iterating over a numerical method to get closer and closer to the square root until a desired level of accuracy is reached. 
 
-To do this I've written a funciton which is a little bit more complicated than it needs to be for our purposes, since we won't be using custom errors or guesses when running the program. 
+To do this I've written a function that is a little bit more complicated than it needs to be for our purposes since we won't be using custom errors or guesses when running the program. 
 
 ### References
 [https://www.geeksforgeeks.org/newton-raphson-method/](https://www.geeksforgeeks.org/newton-raphson-method/)
@@ -198,7 +198,7 @@ To do this I've written a funciton which is a little bit more complicated than i
 ### Discussion
 This program opens a text file, reads the contents, and then counts how many e's there are in the text by iterating through each letter and checking if it's an e. 
 
-The sys library can be used to read arguments which are given when running the program. 
+The sys library can be used to read arguments that are given when running the program. 
  
 
 ### References
@@ -245,4 +245,3 @@ Since our equation is plotted on an x-axis range of 0 to 10, and most values of 
 [https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)
 
 [https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html)
-
