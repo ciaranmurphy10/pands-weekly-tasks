@@ -231,9 +231,9 @@ To do this I've written a function that is a little bit more complicated than it
 
 ### Instructions
 
-Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed and `path_to_text_file.txt` is a valid path to a text file:
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed and `"path_to_text_file.txt"` is a valid path to a text file:
 
-`python es.py path_to_text_file.txt`
+`python es.py "path_to_text_file.txt"`
 
 ### Discussion
 This program opens a text file, reads the contents, and then counts how many e's there are in the text by iterating through each letter and checking if it's an e. 
