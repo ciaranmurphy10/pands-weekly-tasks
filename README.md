@@ -1,4 +1,8 @@
-# 23-24: 8632 -- PROGRAMMING AND SCRIPTING. 
+# 23-24: 8632 -- PROGRAMMING AND SCRIPTING
+
+# Introduction
+
+This repository contains the weekly tasks for the Programming and Scripting (23-24: 8632 -- PROGRAMMING AND SCRIPTING) module for the Higher Diploma in Science in Data Analytics at Atlantic Technological University.
 
 # Weekly Tasks
 
@@ -21,6 +25,12 @@
 >`Enter amount2(in cent): 180`
 >
 >`The sum of these is €2.45`
+
+### Instructions
+
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed: 
+
+`python bank.py`
 
 ### Discussion
 This task requires the code to do a number of different things:
@@ -63,6 +73,12 @@ An issue that you run into as a result of calculating the euro and cent amounts 
 >Extra:
 >Modify the program to deal with account numbers of any length (yes that is a vague requirement, comment your assumptions)
 
+### Instructions
+
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed: 
+
+`python accounts.py`
+
 ## Discussion
 When the user enters their account number it will initially be stored as a string, but since strings are immutable and cannot be changed once they're created, we'll need to convert it to another type so that we can edit the last four digits. Lists are an ideal data type for manipulation, so we'll use the `list()` method to convert our string to a list. 
 
@@ -99,6 +115,12 @@ We can then convert our list back into a string using the `.join()` method.
 >`Please enter a positive integer: 10`
 >
 >`10 5 16 8 4 2 1`
+
+### Instructions
+
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed: 
+
+`python collatz.py`
 
 ### Discussion
 When this program is run, it will request the user to enter a positive integer. This will be stored as a string type so we'll convert it to an int type. The program will check if the inputted value is 0 or a negative integer, returning a custom error message if so. We can then print the inputted value, as this will be the first value in the sequence.
@@ -138,6 +160,12 @@ Once x becomes equal to 1, the while loop condition will not be satisfied anymor
 >
 >`It is the weekend, yay!`
 
+### Instructions
+
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed: 
+
+`python weekday.py`
+
 ### Discussion
 To work out what day of the week it is, we'll use the datetime module which can be imported at the start of our code. We'll chain together a number of methods operating on the date class from the datetime library to find out the current day of the week. 
 
@@ -171,6 +199,12 @@ Since the day of the week will be represented as an integer from 0 to 7, we'll u
 >
 >`The square root of 14.5 is approx. 3.8.`
 
+### Instructions
+
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed: 
+
+`python squareroot.py`
+
 ### Discussion
 This program uses the Newton-Raphson method for determining the square root of a number. This method uses a brute force iterative method for repeatedly approximating the square root of a number. It starts by using an initial guess (in our case, 1) and then iterating over a numerical method to get closer and closer to the square root until a desired level of accuracy is reached. 
 
@@ -194,6 +228,12 @@ To do this I've written a function that is a little bit more complicated than it
 >`$ python es.py moby-dick.txt`
 >
 >`116960`
+
+### Instructions
+
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed and `path_to_text_file.txt` is a valid path to a text file:
+
+`python es.py path_to_text_file.txt`
 
 ### Discussion
 This program opens a text file, reads the contents, and then counts how many e's there are in the text by iterating through each letter and checking if it's an e. 
@@ -219,6 +259,12 @@ The sys library can be used to read arguments that are given when running the pr
 >on the one set of axes.
 >
 >Some marks will be given for making the plot look nice (legend etc).
+
+### Instructions
+
+Run the following command in a terminal such as PowerShell or Bash, ensuring that Python is installed: 
+
+`python plottask.py`
 
 ### Discussion
 This program makes use of Numpy arrays and Matplotlib's plotting functions. 
